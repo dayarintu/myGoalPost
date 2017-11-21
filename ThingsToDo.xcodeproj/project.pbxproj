@@ -56,8 +56,11 @@
 		6B42CD021FC4E40900CB8FBA /* ThingsToDo */ = {
 			isa = PBXGroup;
 			children = (
+				6B42CD1C1FC4E45D00CB8FBA /* View */,
+				6B42CD1B1FC4E45700CB8FBA /* Extensions */,
+				6B42CD1A1FC4E45100CB8FBA /* Enums */,
+				6B42CD181FC4E42000CB8FBA /* Controllers */,
 				6B42CD031FC4E40900CB8FBA /* AppDelegate.swift */,
-				6B42CD051FC4E40900CB8FBA /* ViewController.swift */,
 				6B42CD071FC4E40900CB8FBA /* Main.storyboard */,
 				6B42CD0D1FC4E40900CB8FBA /* Assets.xcassets */,
 				6B42CD0F1FC4E40900CB8FBA /* LaunchScreen.storyboard */,
@@ -65,6 +68,35 @@
 				6B42CD0A1FC4E40900CB8FBA /* ThingsToDo.xcdatamodeld */,
 			);
 			path = ThingsToDo;
+			sourceTree = "<group>";
+		};
+		6B42CD181FC4E42000CB8FBA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B42CD051FC4E40900CB8FBA /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B42CD1A1FC4E45100CB8FBA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6B42CD1B1FC4E45700CB8FBA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B42CD1C1FC4E45D00CB8FBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5TGCNWYET;
 				INFOPLIST_FILE = ThingsToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daya.ThingsToDo;
@@ -293,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5TGCNWYET;
 				INFOPLIST_FILE = ThingsToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daya.ThingsToDo;
