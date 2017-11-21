@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  myGoalVC.swift
 //  ThingsToDo
 //
 //  Created by Dayakar Reddy on 11/21/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class myGoalVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
