@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,9 +50,12 @@
                                             <constraint firstAttribute="height" constant="30" id="b39-8e-eXY"/>
                                         </constraints>
                                         <state key="normal" image="addGoal"/>
+                                        <connections>
+                                            <action selector="goalButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qha-jl-wFC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.45728195144742123" green="0.43612842728800749" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="aof-gD-DRP" secondAttribute="bottom" constant="19" id="7KC-eV-9gH"/>
                                     <constraint firstAttribute="height" constant="70" id="CBx-bl-340"/>
@@ -60,15 +64,119 @@
                                     <constraint firstItem="iAy-Ag-liO" firstAttribute="centerY" secondItem="X39-nr-GeH" secondAttribute="centerY" id="lgf-Uv-EXn"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3xd-pR-eQx">
+                                <rect key="frame" x="92" y="220" width="191" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to myGoal " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hO2-Mw-6ub">
+                                        <rect key="frame" x="0.0" y="0.0" width="191" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to begin , create goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfS-MI-sbp">
+                                        <rect key="frame" x="0.0" y="23.5" width="191" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZcR-0S-FkQ">
+                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="goalCell" rowHeight="75" id="Vcf-ia-wAh" customClass="goalCell" customModule="ThingsToDo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vcf-ia-wAh" id="M7A-LL-X1I">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urt-1d-cn0">
+                                                    <rect key="frame" x="315" y="0.0" width="60" height="74.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="aps-MU-dJq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="33"/>
+                                                    <color key="textColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wXQ-ka-vl4">
+                                                    <rect key="frame" x="8" y="8" width="297" height="58.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tGA-rZ-YXa">
+                                                            <rect key="frame" x="0.0" y="0.0" width="252" height="28.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mjw-zL-0Cv">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="51" height="28.5"/>
+                                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Complete core data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwW-Su-OGh">
+                                                                    <rect key="frame" x="61" y="0.0" width="191" height="28.5"/>
+                                                                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5gE-kz-z3B">
+                                                            <rect key="frame" x="0.0" y="38.5" width="146" height="20"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBu-GW-Tk3">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="45.5" height="20"/>
+                                                                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Short term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEz-jl-CNF">
+                                                                    <rect key="frame" x="55.5" y="0.0" width="90.5" height="20"/>
+                                                                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wXQ-ka-vl4" secondAttribute="bottom" id="E69-Dg-BJd"/>
+                                                <constraint firstAttribute="trailing" secondItem="urt-1d-cn0" secondAttribute="trailing" id="JkM-ub-tCg"/>
+                                                <constraint firstItem="wXQ-ka-vl4" firstAttribute="leading" secondItem="M7A-LL-X1I" secondAttribute="leadingMargin" id="he3-nY-s7x"/>
+                                                <constraint firstItem="wXQ-ka-vl4" firstAttribute="top" secondItem="M7A-LL-X1I" secondAttribute="topMargin" id="txp-NV-cU1"/>
+                                                <constraint firstItem="urt-1d-cn0" firstAttribute="leading" secondItem="wXQ-ka-vl4" secondAttribute="trailing" constant="10" id="wef-YE-Kd2"/>
+                                                <constraint firstAttribute="bottom" secondItem="urt-1d-cn0" secondAttribute="bottom" id="wkv-uS-Tz3"/>
+                                                <constraint firstItem="urt-1d-cn0" firstAttribute="top" secondItem="M7A-LL-X1I" secondAttribute="top" id="xkl-J5-zDA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="goalDescription" destination="iwW-Su-OGh" id="oRl-Ku-dbC"/>
+                                            <outlet property="goalProgress" destination="urt-1d-cn0" id="skc-ZY-vPj"/>
+                                            <outlet property="goalTerm" destination="qEz-jl-CNF" id="6CZ-qb-58x"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="X39-nr-GeH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3T1-Td-eUD"/>
+                            <constraint firstItem="ZcR-0S-FkQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8gB-H2-08W"/>
+                            <constraint firstItem="3xd-pR-eQx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XAc-2K-294"/>
                             <constraint firstItem="X39-nr-GeH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZFg-0m-9t4"/>
+                            <constraint firstItem="ZcR-0S-FkQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d7w-O7-HGI"/>
+                            <constraint firstItem="ZcR-0S-FkQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ltd-bq-gCU"/>
+                            <constraint firstItem="3xd-pR-eQx" firstAttribute="top" secondItem="X39-nr-GeH" secondAttribute="bottom" constant="130" id="o0g-ab-E5z"/>
                             <constraint firstItem="X39-nr-GeH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pAK-V2-Yxk"/>
+                            <constraint firstItem="ZcR-0S-FkQ" firstAttribute="top" secondItem="X39-nr-GeH" secondAttribute="bottom" id="sxO-gM-RWb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="ZcR-0S-FkQ" id="xa9-ZJ-beb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
