@@ -33,7 +33,7 @@ extension myGoalVC: UITableViewDelegate , UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "goalCell") as? goalCell else {
             return UITableViewCell()
         }
-        cell.configureCell(description: "Workout everyday", termType: "Long Term", goalProgressAmount: 7)
+        cell.configureCell(description: "Workout everyday", termType: .longTerm, goalProgressAmount: 7)
         return cell
     }
 }

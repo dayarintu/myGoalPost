@@ -14,6 +14,9 @@
 		6B42CD0E1FC4E40900CB8FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B42CD0D1FC4E40900CB8FBA /* Assets.xcassets */; };
 		6B42CD111FC4E40900CB8FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B42CD0F1FC4E40900CB8FBA /* LaunchScreen.storyboard */; };
 		6B42CD2E1FC4F69A00CB8FBA /* goalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42CD2D1FC4F69A00CB8FBA /* goalCell.swift */; };
+		6B42CD301FC6703B00CB8FBA /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42CD2F1FC6703B00CB8FBA /* GoalType.swift */; };
+		6B42CD321FC6855700CB8FBA /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42CD311FC6855700CB8FBA /* CreateGoalVC.swift */; };
+		6B42CD341FC68ACA00CB8FBA /* UIVCExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B42CD331FC68ACA00CB8FBA /* UIVCExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		6B42CD101FC4E40900CB8FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B42CD121FC4E40900CB8FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B42CD2D1FC4F69A00CB8FBA /* goalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goalCell.swift; sourceTree = "<group>"; };
+		6B42CD2F1FC6703B00CB8FBA /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		6B42CD311FC6855700CB8FBA /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		6B42CD331FC68ACA00CB8FBA /* UIVCExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVCExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				6B42CD051FC4E40900CB8FBA /* myGoalVC.swift */,
+				6B42CD311FC6855700CB8FBA /* CreateGoalVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -83,6 +90,7 @@
 		6B42CD1A1FC4E45100CB8FBA /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				6B42CD2F1FC6703B00CB8FBA /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -90,6 +98,7 @@
 		6B42CD1B1FC4E45700CB8FBA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6B42CD331FC68ACA00CB8FBA /* UIVCExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -175,7 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B42CD2E1FC4F69A00CB8FBA /* goalCell.swift in Sources */,
+				6B42CD301FC6703B00CB8FBA /* GoalType.swift in Sources */,
+				6B42CD321FC6855700CB8FBA /* CreateGoalVC.swift in Sources */,
 				6B42CD061FC4E40900CB8FBA /* myGoalVC.swift in Sources */,
+				6B42CD341FC68ACA00CB8FBA /* UIVCExt.swift in Sources */,
 				6B42CD041FC4E40900CB8FBA /* AppDelegate.swift in Sources */,
 				6B42CD0C1FC4E40900CB8FBA /* ThingsToDo.xcdatamodeld in Sources */,
 			);
